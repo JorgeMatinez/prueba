@@ -1,0 +1,1 @@
+papel.txt  Hola yo soy JORGE Martinez tengo 20 años actualemnte estudio programacion y este es mi primera ediccion de mi archivo en git me considero una persona autentica, alegre , soy una buena persona y me encanta la programacion
