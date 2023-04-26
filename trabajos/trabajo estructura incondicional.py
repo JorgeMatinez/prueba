@@ -96,7 +96,11 @@ if clave == 1 or clave == 2:
     print("El precio total es: ", precio_total)
 else:
     print("clave incorrecta")
-            
+
+    #punto9
+    """ En un hospital existen tres áreas: Psiquiatría, Pediatría, Traumatología. El presupuesto anual del hospital se reparte a estas tres
+    (3) áreas  usted debe realizar un algoritmo que permita ingresar el valor del presupuesto anual, ingresar el porcentaje correspondiente a cada área, realizar el cálculo del presupuesto que corresponde a cada área, si la suma de los porcentajes no corresponde al 100% debe mostrar un mensaje de error.
+Mostrar el porcentaje asignado a cada área y el presupuesto obtenido. """
 
 
 
