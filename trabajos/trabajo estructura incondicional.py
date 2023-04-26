@@ -43,6 +43,16 @@ P2=float(input("precio de venta de cada conejo negro?")) """
 #else:
     #print("se vendieron mas conejos negros",C2)
 
+    #punto6
+#     Diseñe un algoritmo que permita calcular la nota definitiva para los estudiantes,
+# determinadas sobre las siguientes condiciones:
+# • NOTA PREVIOS será el promedio de los previos por el 60%. Cada estudiante
+# tendrá 3 evaluaciones.
+# • NOTA TRABAJOS será el promedio de los trabajos por el 40%. Cada estudiante
+# presentara 2 trabajos.
+# • NOTA FINAL será la suma de la nota de los previos y nota de los trabajos.
+# • Nota mínima 1,0 nota máxima: 5,0
+
 
 nota1=float(input("digite el primer numero: "))
 if nota1 < 1 or nota1 > 5 :
@@ -78,25 +88,31 @@ clave es 1 el descuento es del 10% y si la clave es 2 el descuento es del 20% (s
 cantidad y su precio con descuento. El descuento lo hace en base a la clave, si la
 clave es 1 el descuento es del 10% y si la clave es 2 el descuento es del 20% (solo existen dos claves) """
 
-nombre_articulo=input("Digite el nombre del articulo")
-clave=int(input("Digite la clave del articulo"))
-if clave == 1 or clave == 2:
 
-    Precio_original=float(input("Digite el precio del articulo"))
-    cantidad=int(input("Digite la cantidad del articulo"))
 
-    if clave == 1:
-        precio_con_descuento=Precio_original * 0.9
-    else:
-        precio_con_descuento=Precio_original * 0.8
+#punto8
+# En un hospital existen tres áreas: Psiquiatría, Pediatría, Traumatología. El
+# presupuesto anual del hospital se reparte a estas tres (3) áreas; usted debe realizar
+# un algoritmo que permita ingresar el valor del presupuesto anual, ingresar el
+# porcentaje correspondiente a cada área, realizar el cálculo del presupuesto que
+# corresponde a cada área,si la suma de los porcentajes no corresponde al 100% debe
+# mostrar un mensaje de error.
+# Mostrar el porcentaje asignado a cada área y el presupuesto obtenido.
 
-    precio_total=precio_con_descuento * cantidad
-
-    print(nombre_articulo,clave,Precio_original,cantidad,precio_con_descuento)
-    print("El precio total es: ", precio_total)
+presupuesto_anual=float(input("digite el presupuesto anual:"))
+pediatria=float(input("cuanto porcentaje (%) pediatria:"))
+psiquiatria=float(input("cuanto porcentaje(%) psiquiatria:"))
+traumologia=float(input("cuanto porcentaje(%) traumologia:"))
+if pediatria + psiquiatria + traumologia== 100:
+    p1=((presupuesto_anual *pediatria)/100)
+    p2=((presupuesto_anual * psiquiatria)/100)
+    p3=((presupuesto_anual * traumologia)/100)
+    print("Al area pediatria le corresponde :",p1 ,"psiquiatria" ,p2, "traumologia:",p3,)
+    print("para un total de : ", p1+p2+p3)
 else:
-    print("clave incorrecta")
-            
+    print("error,LA SUMA DE LOS PORCENTAJES DA MAS DEL 100%")
+
+#punto9
 
 
 
