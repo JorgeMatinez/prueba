@@ -54,30 +54,30 @@ P2=float(input("precio de venta de cada conejo negro?")) """
 # • Nota mínima 1,0 nota máxima: 5,0
 
 
-nota1=float(input("digite el primer numero: "))
-if nota1 < 1 or nota1 > 5 :
-    print("nota invalida")
-else :
-    nota2=float(input("digite el segundo numero: "))
-    if nota2 < 1 or nota2 > 5 :
-     print("nota invalida")
-    else:
-        nota3=float(input("digite el tercer numero: "))
-        if nota3 < 1 or nota3 > 5 :
-            print("nota invalida")
-        else:
-            notaprevios= ((nota1 + nota2 +nota3)/3) *0.6
-            nota4=float(input("digite el cuarto numero: "))
-            if nota4 < 1 or nota4 > 5:
-                print("nota invalida")
-            else:
-                nota5=float(input("digite el quinto numero: "))
-                if nota5 < 1 or nota5 > 5:
-                    print("nota invalida")
-                else:
-                    notatrabajos=((nota4+nota5)/2)*0.4
-                    notafinal=notaprevios+notatrabajos
-                    print("Su nota final es",notafinal)
+# nota1=float(input("digite el primer numero: "))
+# if nota1 < 1 or nota1 > 5 :
+#     print("nota invalida")
+# else :
+#     nota2=float(input("digite el segundo numero: "))
+#     if nota2 < 1 or nota2 > 5 :
+#      print("nota invalida")
+#     else:
+#         nota3=float(input("digite el tercer numero: "))
+#         if nota3 < 1 or nota3 > 5 :
+#             print("nota invalida")
+#         else:
+#             notaprevios= ((nota1 + nota2 +nota3)/3) *0.6
+#             nota4=float(input("digite el cuarto numero: "))
+#             if nota4 < 1 or nota4 > 5:
+#                 print("nota invalida")
+#             else:
+#                 nota5=float(input("digite el quinto numero: "))
+#                 if nota5 < 1 or nota5 > 5:
+#                     print("nota invalida")
+#                 else:
+#                     notatrabajos=((nota4+nota5)/2)*0.4
+#                     notafinal=notaprevios+notatrabajos
+#                     print("Su nota final es",notafinal)
 
 #punto7
 """ Hacer un algoritmo que imprima el nombre de un artículo, clave, precio original,
@@ -99,21 +99,33 @@ clave es 1 el descuento es del 10% y si la clave es 2 el descuento es del 20% (s
 # mostrar un mensaje de error.
 # Mostrar el porcentaje asignado a cada área y el presupuesto obtenido.
 
-presupuesto_anual=float(input("digite el presupuesto anual:"))
-pediatria=float(input("cuanto porcentaje (%) pediatria:"))
-psiquiatria=float(input("cuanto porcentaje(%) psiquiatria:"))
-traumologia=float(input("cuanto porcentaje(%) traumologia:"))
-if pediatria + psiquiatria + traumologia== 100:
-    p1=((presupuesto_anual *pediatria)/100)
-    p2=((presupuesto_anual * psiquiatria)/100)
-    p3=((presupuesto_anual * traumologia)/100)
-    print("Al area pediatria le corresponde :",p1 ,"psiquiatria" ,p2, "traumologia:",p3,)
-    print("para un total de : ", p1+p2+p3)
-else:
-    print("error,LA SUMA DE LOS PORCENTAJES DA MAS DEL 100%")
+# presupuesto_anual=float(input("digite el presupuesto anual:"))
+# pediatria=float(input("cuanto porcentaje (%) pediatria:"))
+# psiquiatria=float(input("cuanto porcentaje(%) psiquiatria:"))
+# traumologia=float(input("cuanto porcentaje(%) traumologia:"))
+# if pediatria + psiquiatria + traumologia== 100:
+#     p1=((presupuesto_anual *pediatria)/100)
+#     p2=((presupuesto_anual * psiquiatria)/100)
+#     p3=((presupuesto_anual * traumologia)/100)
+#     print("Al area pediatria le corresponde :",p1 ,"psiquiatria" ,p2, "traumologia:",p3,)
+#     print("para un total de : ", p1+p2+p3)
+# else:
+#     print("error,LA SUMA DE LOS PORCENTAJES DA MAS DEL 100%")
 
 #punto9
+# Diseñar un algoritmo para determinar el precio del tiquete de ida y vuelta en avión,
+# conociendo la distancia a recorrer, sabiendo que si el número de días de estancia es
+# superior o igual a 7 y la distancia superior a 800 km el billete tiene una reducción
+# del30%. El precio por km es de $2,5 dólares.
 
-
+# tiquete_ida=int(input("Que dia piensa viajar?:"))
+# tiquete_vuelta=int(input("Que dia piensa regresar del viaje"))
+# distancia_km=float(input("Cuantos km de distancia tiene el viaje"))
+# if  tiquete_vuelta - tiquete_ida >= 7:
+#     if distancia_km >=800:
+#         nato=((distancia_km*2.5)*0.30)
+#         print("Se aplica el descuento del 30%:" , nato)
+# else:
+#     print("El valor de su ticket es: " ,distancia_km *2.5)
 
     
