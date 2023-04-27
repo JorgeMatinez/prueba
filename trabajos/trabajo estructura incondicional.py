@@ -1,4 +1,69 @@
 # Taller
+#punto2
+# (Sentencia match) Diseñar un algoritmo que lea por teclado un número comprendido entre 1 y 10. Se desea visualizar si 
+#el número es par o impar. En primer lugar, se deberá
+# detectar si el número está comprendido en el rango válido (1 a 10) y a continuación si el número es 1, 3, 5, 7, 9, escribir un mensaje de “impar”;
+# si es 2, 4, 6, 8, 10, escribir un mensaje de “par”.
+
+numero = int(input("Introduce un número entre 1 y 10: "))
+
+# Verificar si el número está en el rango válido
+if numero < 1 or numero > 10:
+    print("El número introducido no está en el rango válido.")
+else:
+    match numero:
+        case 1:
+            print('Impar')
+        case 2:
+            print('par')
+        case 3:
+            print('Impar')
+        case 4:
+            print('par')
+        case 5:
+            print('Impar')
+        case 6:
+            print('par')
+        case 7:
+            print('Impar')
+        case 8:
+            print('par')
+        case 9:
+            print('Impar')
+        case 10:
+            print('par')
+#punto3
+# Sentencia match) Diseñar un algoritmo que lea un número entero entre 1 y 10,
+# y nos muestre por pantalla el número ingresado en letra (1 = uno).
+# Si el número leído no está comprendido entre 1 y 10 mostrar un mensaje de error.
+
+numero_entero=int(input("introduce un numero entre 1 y 10"))
+#verificar si el numero esta en el rango valido
+if numero_entero <1 or numero_entero >10:
+    (print("numero invalido"))
+else:
+    match numero_entero:
+        case 1:
+            print(" uno")
+        case 2:
+            print("dos")
+        case 3:
+            print("tres")
+        case 4:
+            print("cuatro")
+        case 5:
+            print("cinco")
+        case 6:
+            print("seix")
+        case 7:
+            print("siete")
+        case 8:
+            print("ocho")
+        case 9:
+            print("nueve")
+        case 10:
+            print("diez")
+        
 # punto4
 # Determinar la cantidad total a pagar por una llamada telefónica, teniendo en cuenta
 # lo siguiente
